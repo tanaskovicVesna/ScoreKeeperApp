@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ScoreKeeperApp</string>
+    <string name="about">About</string>
+    <string name="basketball">Basketball</string>
+    <string name="soccer">Soccer</string>
+    <string name="hockey">Hockey</string>
+    <string name="handball">Handball</string>
+    <string name="dialog_about_app">About</string>
+    <string name="dialog_about_yes">Cancel</string>
+</resources>
