@@ -1,11 +1,16 @@
-package com.example.android.scorekeeperapp;
+package com.example.android.scorekeeperapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class SoccerActivity extends AppCompatActivity {
+import com.example.android.scorekeeperapp.R;
+
+import static com.example.android.scorekeeperapp.R.drawable.foul;
+
+public class HandballActivity extends AppCompatActivity {
+
     // Tracks the score for Team A
     int scoreTeamA = 0;
     // Tracks the score for Team B
@@ -22,7 +27,7 @@ public class SoccerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_soccer);
+        setContentView(R.layout.activity_handball);
     }
 
 
@@ -36,7 +41,7 @@ public class SoccerActivity extends AppCompatActivity {
 
 
     /**
-     * Increase the number of yellow peanlties for Team A by 1 point.
+     * Increase the number of 2min suspensions for Team A by 1 point.
      */
     public void addFoulForTeamA(View v) {
         foulTeamA =foulTeamA + 1;
@@ -60,7 +65,7 @@ public class SoccerActivity extends AppCompatActivity {
 
 
     /**
-     * Increase the number of yellow peanlties  for Team B by 1 point.
+     * Increase the number of 2min suspensions for Team B by 1 point.
      */
     public void addFoulForTeamB(View v) {
         foulTeamB =foulTeamB + 1;
@@ -75,7 +80,7 @@ public class SoccerActivity extends AppCompatActivity {
     }
 
     /**
-     * Resets the score, yellow peanlties  and exclusions for both teams back to 0.
+     * Resets the score, suspensions and exclusions for both teams back to 0.
      */
     public void resetScore(View v) {
         scoreTeamA = 0;
@@ -109,7 +114,7 @@ public class SoccerActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays yellow peanlty  for Team A.
+     * Displays suspensions for Team A.
      */
     public void displayFoulForTeamA(int foul) {
         TextView foulView = (TextView) findViewById(R.id.team_a_foul);
@@ -117,7 +122,7 @@ public class SoccerActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays yellow peanlty for Team B.
+     * Displays suspensions for Team B.
      */
     public void displayFoulForTeamB(int foul) {
         TextView foulView = (TextView) findViewById(R.id.team_b_foul);

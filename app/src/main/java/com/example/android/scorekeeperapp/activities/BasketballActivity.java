@@ -1,4 +1,4 @@
-package com.example.android.scorekeeperapp;
+package com.example.android.scorekeeperapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.android.scorekeeperapp.R;
 
 public class BasketballActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.android.scorekeeperapp;
+package com.example.android.scorekeeperapp.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.android.scorekeeperapp.R;
 import com.example.android.scorekeeperapp.dialog.AboutDialog;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
